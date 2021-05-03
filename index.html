@@ -25,16 +25,33 @@
 						<div class="content">
 							<div class="inner">
 								<h1>ME GUSTAN LOS PERROS</h1>
-								<p> Siempre sabes lo que piensa un perro. Tiene cuatro estados de ánimo. <a href="perros-felices.html">FELIZ</a>, triste, enfadado y concentrado. Además, los perros son fieles y no mienten porque no pueden hablar.</p>
+								<p><b> Siempre sabes lo que piensa un perro. Tiene cuatro estados de ánimo: feliz, triste, enfadado y con miedo. Además, los perros son fieles y no mienten porque no pueden hablar.</b></p>
+							
+							<table border="0" width="95%" height="auto">
+								<tr>
+									<td><center><img src="images/feliz.jpeg" border="0"></center></td>
+									<td><center><img src="images/triste.jpeg" border="0"></center></td>
+									<td><center><img src="images/enfadado.jpeg" border="0"></center></td>
+									<td><center><img src="images/miedo.jpeg" border="0"></center></td>
+								</tr>
+							</table>
+							<table border="0" width="95%" height="auto">
+								<tr>
+									<td><center><a href="perros-felices.html"><b>FELIZ</b></a></center></td>
+									<td><center><a href="perros-tristes.html"><b>TRISTE</b></a></center></td>
+									<td><center><a href="perros-enfadados.html"><b>ENFADAD0</b></a></center></td>
+									<td><center><a href="perros-miedo.html"><b>MIEDO</b></a></center></td>
+								</tr>
+							</table>
 							</div>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#Caracteristicas">Caracteristicas</a></li>
-								<li><a href="#Alimentacion">Alimentacion</a></li>
-								<li><a href="#Curiosidades">Curiosidades</a></li>
-								<li><a href="#Contacto">Contacto</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<li><a href="#Caracteristicas"><b>Caracteristicas</b></a></li>
+								<li><a href="#Alimentacion"><b>Alimentacion</b></a></li>
+								<li><a href="#Curiosidades"><b>Curiosidades</b></a></li>
+								<li><a href="#Contacto"><b>Contacto</b></a></li>
+								<li><a href="#Razas"><b>Razas</b></a></li>
 							</ul>
 						</nav>
 					</header>
@@ -65,7 +82,17 @@
 									<img src="images/images3.jpeg" align="left">Su gran capacidad auditiva permite que sean guardianes y buenos cazadores ya que pueden alertarse a tiempo gracias a su capacidad de captar sonidos muy leves o que provienen de distancias alejadas. Además, su retina percibe mejor el movimiento y la luz en comparación a las personas, aunque no distinguen una gran amplitud cromática.
 								</p>
 								<p>La piel de los perros está compuesta por varias capas. La externa contiene el pelaje y la interna, que es más fina y más sensible que la piel humana, los protege y los ayuda a regular la temperatura de su cuerpo, tanto para el frío como para el calor. Cuando se sienten amenazados o quieren impresionar suelen erizar su pelaje para aparentar una contextura más grande o robusta.</p>
-								<a href="index.html" align="left">Inicio</a>.</p> <a href="#Alimentacion" align="right">Siguiente</a>.</p>
+								
+								<p align="left">
+									<form action="index.html">
+										<input type="submit" value="Inicio" />
+									</form>
+								</p>
+								<p align="right">
+									<form action="#Alimentacion">
+										<input type="submit" value="Alimentacion" />
+									</form>
+								</p>
 							</article>
 
 						<!-- Alimentacion -->
@@ -93,6 +120,9 @@
 								<p>
 									<img src="images/zanahoria.jpeg" align="left"><b>Zanahorias</b> Buenas para los dientes de tu perro, las zanahorias son bajas en calorías y altas en fibra y beta-caroteno/vitamina A.
 								</p>
+								<br>
+								<br>
+								<br>
 								<h3> ¿Que alimentos humanos NO pueden comer nuestras mascotas?</h3>
 								<p>Seguramente habreis dudado alguna vez de si ese alimento puede ser perjudicial para nuestra mascota, anteriormente hemos dicho algunos alimentos que son beneficiosos para nuestras mascotas, ahora diremos algunos que son dañinos para ellos.</p>
 								<ol>
@@ -134,7 +164,6 @@
 										<td>Manzanas</td>
 									</tr>
 								</table>
-								<a href="index.html">Inicio</a>.</p> <a href="#Curiosidades">Siguiente</a>.</p>
 								<p align="left">
 									<form action="index.html">
 										<input type="submit" value="Inicio" />
@@ -194,7 +223,6 @@
 								<p>
 									<img src="images/14.jpg" width="200" height="150"align="left"><br><br><b>La perra puede rechazar a sus cachorros</b><br>En aquellos casos en los que una perra tenga cachorritos por cesárea, hay que tener mucho cuidado de no pasarse lavándolos pues podría rechazarlos.
 								</p>
-								<a href="index.html">Inicio</a>.</p> <a href="#Contacto">Siguiente</a>.</p>
 								<p align="left">
 									<form action="index.html">
 										<input type="submit" value="Inicio" />
@@ -210,7 +238,7 @@
 						<!-- Contacto -->
 							<article id="Contacto">
 								<h2 class="major">Contacto</h2>
-								<form method="post" action="#">
+								<form method="POST" action="http://www2.gonzalonazareno.org/josedom/resultado.php">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -220,6 +248,15 @@
 											<label for="email">Email</label>
 											<input type="text" name="email" id="email" />
 										</div>
+										<div class="field half">
+											<label for="masinfo">Mas Informacion</label>
+											<select name="masinfo">
+												<option>Caracteristicas</option>
+												<option>Alimentacion</option>
+												<option>Curiosidades</option>
+												<option>Otra Cosa</option>												
+											</select>
+										<div>										
 										<div class="field">
 											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="4"></textarea>
@@ -236,248 +273,60 @@
 									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
+
+								<p align="left">
+									<form action="index.html">
+										<input type="submit" value="Inicio" />
+									</form>
+								</p>
+								<p align="right">
+									<form action="#Razas">
+										<input type="submit" value="Razas" />
+									</form>
+								</p>
 							</article>
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
+						<!-- Razas -->
+							<article id="Razas">
+								<h2 class="major">Razas</h2>
 								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+									<p>Existen muchisimas razas de perros, pero solo nombraremos algunas y tambien diremos algunas de sus caracteristicas:</p>
+									
+									<h4><b>Perro de Agua</b></h4>
+									<a href="https://www.expertoanimal.com/razas-de-perros/barbet-o-perro-de-agua-frances.html"><img src="images/perro-agua.jpeg"></a>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+									<h4><b>Husky Siberiano</b></h4>
+									<a href="https://www.expertoanimal.com/razas-de-perros/husky-siberiano.html"><img src="images/husky-siberiano.jpeg"></a>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+									<h4><b>Yorkshire Terrier</b></h4>
+									<a href="https://www.expertoanimal.com/razas-de-perros/yorkshire-terrier.html"><img src="images/yorkshire-terrier.jpeg"></a>
+									
+									<h4><b>Rottweiler</b></h4>
+									<a href="https://www.expertoanimal.com/razas-de-perros/rottweiler.html"><img src="images/Rottweiler.jpeg"></a>
+									
+									<h4><b>Labrador Retriever</b></h4>
+									<a href="https://www.expertoanimal.com/razas-de-perros/labrador-retriever.html"><img src="images/labrador.jpeg"></a>
+									
+									<h4><b>Lobero Irlandés</b></h4>
+									<a href="https://www.expertoanimal.com/razas-de-perros/lobero-irlandes.html"><img src="images/lobero.jpeg"></a>
+									
+									<h4><b>Border collie</b></h4>
+									<a href="https://www.expertoanimal.com/razas-de-perros/border-collie.html"><img src="images/border.jpeg"></a>
+									
+									<h4><b>Pug o Carlino</b></h4>
+									<a href="https://www.expertoanimal.com/razas-de-perros/pug-o-carlino.html"><img src="images/pug-carlino.jpeg"></a>
+
+									<h4><b>Poochon</b></h4>
+									<a href="https://www.expertoanimal.com/razas-de-perros/poochon.html"><img src="images/poochon.jpeg"></a>
+
+									<h4><b>Bloodhound</b></h4>
+									<a href="https://www.expertoanimal.com/razas-de-perros/bloodhound-o-perro-de-san-huberto.html"><img src="images/Bloodhound.jpeg"></a>
 								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
+								<p align="left">
+									<form action="index.html">
+										<input type="submit" value="Inicio" />
 									</form>
-								</section>
-
+								</p>
 							</article>
 
 					</div>
@@ -501,4 +350,3 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
-
